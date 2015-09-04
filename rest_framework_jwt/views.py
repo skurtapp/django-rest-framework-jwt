@@ -56,6 +56,8 @@ class JSONWebTokenAPIView(APIView):
             data=get_request_data(request)
         )
 
+        print 'posting on the skurt version of the django-rest-framework-jwt'
+
         if serializer.is_valid():
             user = serializer.object.get('user') or request.user
             token = serializer.object.get('token')
