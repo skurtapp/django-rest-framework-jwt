@@ -31,7 +31,7 @@ install_requires = [
     'parse_rest'
 ]
 dependency_links = [
-    'git+ssh://git@github.com/dgrtwo/ParsePy.git'
+    'git+ssh://git@github.com/dgrtwo/ParsePy.git@15faf6bdd1fbb1d86e46aba4503eb73ce12e6468#egg=parse_rest'
 ]
 
 
