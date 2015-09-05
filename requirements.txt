@@ -7,4 +7,3 @@
 -r requirements/documentation.txt
 -r requirements/codestyle.txt
 -r requirements/packaging.txt
-git+https://github.com/dgrtwo/ParsePy.git
