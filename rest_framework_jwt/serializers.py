@@ -14,6 +14,7 @@ from rest_framework_jwt.compat import (
     PasswordField
 )
 
+from parse_rest.user import User as ParseUser
 
 jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
 jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
@@ -45,10 +46,11 @@ class JSONWebTokenSerializer(Serializer):
         }
 
         if all(credentials.values()):
-            # user = authenticate(**credentials)
-            user = User.objects.get(id=1)
 
-            if user:
+            parse_user = ParseUser.Query.get(objectId=credentials['parse_user_id'])
+
+            if parse_user and (parse_user.sessionToken == credentials['session_token']):
+                user = User.objects.get(id=1)
                 if not user.is_active:
                     msg = _('User account is disabled.')
                     raise serializers.ValidationError(msg)
