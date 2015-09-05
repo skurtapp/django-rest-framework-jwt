@@ -28,10 +28,10 @@ author_email = 'jpadilla@getblimp.com'
 license = 'MIT'
 install_requires = [
     'PyJWT>=1.4.0,<2.0.0',
-    'parse_rest'
+    'parse_rest>=0.2.20141004'
 ]
 dependency_links = [
-    'git+ssh://git@github.com/dgrtwo/ParsePy.git@15faf6bdd1fbb1d86e46aba4503eb73ce12e6468#egg=parse_rest'
+    'git+ssh://git@github.com/dgrtwo/ParsePy.git@0.2.20141004#egg=parse_rest-0.2.20141004'
 ]
 
 
