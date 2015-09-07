@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 __title__ = 'skurt-djangorestframework-jwt'
-__version__ = '1.7.3'
+__version__ = '1.7.4'
 __author__ = 'José Padilla'
 __license__ = 'MIT'
 __copyright__ = 'Copyright 2014-2015 Blimp LLC'
