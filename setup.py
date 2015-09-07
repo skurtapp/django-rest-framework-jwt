@@ -19,8 +19,8 @@ def get_version(package):
 
 
 name = 'skurt-djangorestframework-jwt'
-version = get_version('rest_framework_jwt')
-package = 'rest_framework_jwt'
+version = get_version('skurt_rest_framework_jwt')
+package = 'skurt_rest_framework_jwt'
 description = 'JSON Web Token based authentication for Django REST framework'
 url = 'https://github.com/skurtapp/django-rest-framework-jwt'
 author = 'Jose Padilla'
@@ -75,7 +75,7 @@ if sys.argv[-1] == 'publish':
     os.system('twine upload dist/*')
     shutil.rmtree('dist')
     shutil.rmtree('build')
-    shutil.rmtree('djangorestframework_jwt.egg-info')
+    shutil.rmtree('skurt_djangorestframework_jwt.egg-info')
     print('You probably want to also tag the version now:')
     print("  git tag -a {0} -m 'version {0}'".format(version))
     print('  git push --tags')
