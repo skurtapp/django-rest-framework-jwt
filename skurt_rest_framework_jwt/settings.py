@@ -30,7 +30,7 @@ DEFAULTS = {
     'JWT_VERIFY': True,
     'JWT_VERIFY_EXPIRATION': True,
     'JWT_LEEWAY': 0,
-    'JWT_EXPIRATION_DELTA': datetime.timedelta(seconds=300),
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(hours=2),
     'JWT_AUDIENCE': None,
     'JWT_ISSUER': None,
 
